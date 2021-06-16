@@ -10,6 +10,7 @@ docker run -d --name picuploader \
   -e USER=admin \
   -e PASSWD=admin \
   -v ~/docker/config/config-local.php:/var/www/PicUploader/config/config-local.php \
+  -v ~/docker/db/PicUploader.db:/var/www/PicUploader/db/PicUploader.db \
   -p 80:80 \
   artxia/picuploader-docker
 ```
